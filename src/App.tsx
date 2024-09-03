@@ -1,12 +1,14 @@
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux';
+import { useTranslation } from 'react-i18next';
 import { RootState, increment, decrement } from './store'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const count = useSelector((state: RootState) => state.counter.value)
-  const dispatch = useDispatch()
+  const count = useSelector((state: RootState) => state.counter.value);
+  const dispatch = useDispatch();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -33,6 +35,9 @@ function App() {
       <h1 className="text-4xl font-bold underline">
         Hello Tailwind!
       </h1>
+      <div>
+        <h2>{t('welcome')}</h2>
+      </div>
     </>
   )
 }
