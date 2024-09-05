@@ -29,6 +29,6 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      //TODO Return this check after tests implementation
+      #/TODO Return this check after tests implementation
       # - name: Run tests
       #   run: npm test
