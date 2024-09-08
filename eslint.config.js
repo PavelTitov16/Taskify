@@ -1,11 +1,10 @@
-import eslintPluginReact from 'eslint-plugin-react'
-import eslintPluginReactHooks from 'eslint-plugin-react-hooks'
-import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin'
-import typescriptEslintParser from '@typescript-eslint/parser'
-import eslintPluginPrettier from 'eslint-plugin-prettier'
+import eslintPluginReact from 'eslint-plugin-react';
+import eslintPluginReactHooks from 'eslint-plugin-react-hooks';
+import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin';
+import typescriptEslintParser from '@typescript-eslint/parser';
+import eslintPluginPrettier from 'eslint-plugin-prettier';
 
-export default [
-  {
+export default [{
     ignores: ['node_modules', 'dist'],
   },
   {
@@ -43,4 +42,4 @@ export default [
       'react/react-in-jsx-scope': 'off',
     },
   },
-]
+];
