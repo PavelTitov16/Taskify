@@ -3,6 +3,9 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      spacing: {
+        '5_5': '22px',
+      },
       colors: {
         white: '#FFFFFF',
         gray3: '#E5E7EB',
@@ -14,6 +17,10 @@ module.exports = {
         pageBg: '#f9fafb',
         stroke: '#DFE4EA',
         dark5: '#6B7280',
+        dark6: '#9CA3AF',
+      },
+      fontFamily: {
+        inter: "Inter', sans-serif",
       },
     },
   },
