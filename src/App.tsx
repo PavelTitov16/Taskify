@@ -4,6 +4,8 @@ import { RootState, increment, decrement } from './store';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSheetPlastic, faUser } from './faIcons';
 
 function App() {
   const count = useSelector((state: RootState) => state.counter.value);
@@ -12,6 +14,12 @@ function App() {
 
   return (
     <>
+        <div className='w-9 h-9 bg-secondaryText rounded-full flex items-center justify-center'>
+          <FontAwesomeIcon icon={faUser} className='text-white w-6' />
+        </div>
+        <div className='w-7 h-7 bg-primary rounded-full flex items-center justify-center'>
+          <FontAwesomeIcon icon={faSheetPlastic} className='text-white w-6' />
+        </div>
       <div className='flex justify-center'>
         <img src={viteLogo} className="logo" alt="Vite logo" />
         <img src={reactLogo} className="logo react" alt="React logo" />
