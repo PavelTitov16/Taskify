@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSheetPlastic, faUser, faBars, faMagnifyingGlass } from '../faIcons';
+import { faUser, faBars, faMagnifyingGlass } from '../faIcons';
 
 export const Header = () => {
   return (
@@ -25,10 +25,6 @@ export const Header = () => {
 					<FontAwesomeIcon icon={faUser} className='text-white w-6' />
 				</div>
 			</div>
-			
-        {/* <div className='w-7 h-7 bg-primary rounded-full flex items-center justify-center'>
-          <FontAwesomeIcon icon={faSheetPlastic} className='text-white w-6' />
-        </div> */}
 		</header>
 	)
 }

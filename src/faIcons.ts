@@ -1,5 +1,5 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faSheetPlastic, faBars, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faSheetPlastic, faBars, faMagnifyingGlass, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { faGithub, faFacebookF, faLinkedinIn, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
@@ -20,5 +20,6 @@ export {
 	faFacebookF,
 	faLinkedinIn,
 	faYoutube,
-	faMagnifyingGlass
+	faMagnifyingGlass,
+	faPhoneVolume
 };
