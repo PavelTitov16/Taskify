@@ -7,7 +7,7 @@ import reactLogo from '../assets/react.svg';
 import viteLogo from '/vite.svg';
 
 export const HomePage = () => {
-	const count = useSelector((state: RootState) => state.counter.value);
+  const count = useSelector((state: RootState) => state.counter.value);
   const dispatch = useDispatch();
   const { t } = useTranslation();
 
