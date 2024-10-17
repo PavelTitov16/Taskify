@@ -12,8 +12,8 @@ export const HomePage = () => {
   const { t } = useTranslation();
 
   return (
-		<>
-      <div className='flex justify-center'>
+    <>
+      <div className="flex justify-center">
         <img src={viteLogo} className="logo" alt="Vite logo" />
         <img src={reactLogo} className="logo react" alt="React logo" />
       </div>
@@ -29,12 +29,10 @@ export const HomePage = () => {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <h1 className="text-4xl font-bold underline">
-        Hello Tailwind!
-      </h1>
+      <h1 className="text-4xl font-bold underline">Hello Tailwind!</h1>
       <div>
         <h2>{t('welcome')}</h2>
       </div>
     </>
-	)
-}
+  );
+};
