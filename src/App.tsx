@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import './App.css';
 
@@ -6,9 +6,7 @@ import { HomePage } from './pages/HomePage';
 import { AuthPage } from './pages/AuthPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 
-function App() {
-  
-
+export const App = () => {
   return (
     <Router>
       <nav>
@@ -27,8 +25,5 @@ function App() {
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Router>
-    
-  )
-}
-
-export default App
+  );
+};
