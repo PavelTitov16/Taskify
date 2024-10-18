@@ -5,9 +5,14 @@ on:
     branches:
       - main
       - develop
+  push:
+    branches:
+      - main
+      - develop
 
 jobs:
   build:
+    name: CI / build
     runs-on: ubuntu-latest
 
     steps:
