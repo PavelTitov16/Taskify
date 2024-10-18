@@ -19,7 +19,6 @@ export const Header = () => {
 					<FontAwesomeIcon icon={faMagnifyingGlass} className='text-dark5 w-3.5' />
 				</form>
 			</div>
-
 			<div className='flex gap-4 items-center'>
 				<span className='font-inter font-medium text-sm text-primary leading-5'>Login</span>
 				<div className='w-9 h-9 bg-secondaryText rounded-full flex items-center justify-center'>
