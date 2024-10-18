@@ -20,7 +20,6 @@ export const Footer = () => {
 						<span className='font-inter font-medium text-sm text-dark leading-5'>+7 (459) 322 23 33</span>
 					</div>
 				</div>
-        
 				<div className='flex gap-12 pb-6'>
 					<div className='flex flex-col gap-6 text-left'>
 						<p className='font-inter font-semibold text-lg text-dark'>
