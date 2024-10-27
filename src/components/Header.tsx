@@ -3,7 +3,7 @@ import { faUser, faBars, faMagnifyingGlass } from '../faIcons';
 
 export const Header = () => {
   return (
-		<header className='w-full py-6 px-5_5 flex justify-between items-center'>
+		<header className='w-full py-6 px-5_5 flex justify-between items-center bg-white'>
 			<div className='flex items-center'>
 				<FontAwesomeIcon icon={faBars} className='w-7 h-7' />
 				<button className='mx-2 px-7 py-3 rounded-full bg-gray3 flex justify-center items-center font-inter font-medium text-dark5 leading-6 hover:bg-primary hover:text-white duration-300'>

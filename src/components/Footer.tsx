@@ -3,7 +3,7 @@ import { faSheetPlastic, faPhoneVolume, faGithub, faFacebookF, faLinkedinIn, faY
 
 export const Footer = () => {
   return (
-		<footer className='w-full py-8 px-40 flex flex-col gap-12 items-center'>
+		<footer className='w-full py-8 px-40 flex flex-col gap-12 items-center bg-white'>
 			<div className='flex justify-between items-center'>
 				<div className='flex flex-col gap-4 w-1/4 text-left'>
 					<div className='flex gap-1 items-center'>
@@ -13,7 +13,7 @@ export const Footer = () => {
 						<span className='font-inter font-bold text-2xl text-font'>Taskify</span>
 					</div>
 					<p className='font-inter font-normal text-base text-primaryText'>
-						Lorem ipsum dolor sit amet pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit. 
+						Lorem ipsum dolor sit amet pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit.
 					</p>
 					<div className='flex gap-2 items-center'>
 						<FontAwesomeIcon icon={faPhoneVolume} className='text-primary h-5' />

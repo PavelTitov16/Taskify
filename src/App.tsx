@@ -10,10 +10,10 @@ import { Footer } from './components/Footer';
 
 export const App = () => {
   return (
-    <div className="app flex flex-col justify-between h-screen">
+    <div className="app flex flex-col justify-between h-screen bg-gray-300">
       <Header />
       <Router>
-        <nav>
+        {/* <nav>
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -22,7 +22,7 @@ export const App = () => {
               <Link to="/auth">About</Link>
             </li>
           </ul>
-        </nav>
+        </nav> */}
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/auth" element={<AuthPage />} />
@@ -31,6 +31,6 @@ export const App = () => {
       </Router>
       <Footer />
     </div>
-    
+
   );
 };
