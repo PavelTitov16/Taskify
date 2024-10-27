@@ -10,7 +10,7 @@ export const HomePage = () => {
 
   return (
     <>
-      <main className='mx-auto rounded-[16px] bg-white flex justify-between overflow-hidden'>
+      <main className='mx-auto rounded-[16px] bg-white flex justify-between overflow-hidden drop-shadow-xl '>
         <div className='m-auto h-[305px] w-[336px] py-10 px-5 flex flex-col justify-between items-center'>
           <img className='mx-auto' src={logo} alt="logo" />
           <p>Lorem ipsum dolor sit amet pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit. </p>

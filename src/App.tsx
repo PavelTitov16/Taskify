@@ -10,7 +10,7 @@ import { Footer } from './components/Footer';
 
 export const App = () => {
   return (
-    <div className="app flex flex-col justify-between h-screen bg-gray-100">
+    <div className="app flex flex-col justify-between h-screen bg-pageBg">
       <Header />
       <Router>
         {/* <nav>
