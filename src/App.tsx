@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css';
 
@@ -13,16 +13,6 @@ export const App = () => {
     <div className="app flex flex-col justify-between h-screen bg-pageBg">
       <Header />
       <Router>
-        {/* <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/auth">About</Link>
-            </li>
-          </ul>
-        </nav> */}
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/auth" element={<AuthPage />} />
@@ -31,6 +21,5 @@ export const App = () => {
       </Router>
       <Footer />
     </div>
-
   );
 };
