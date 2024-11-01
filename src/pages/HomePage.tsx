@@ -1,32 +1,27 @@
-import { useSelector, useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
+import { NavButton } from '../components/NavButton.tsx';
 
-import { RootState, increment, decrement } from '../store';
-
-import reactLogo from '../assets/react.svg';
-import viteLogo from '/vite.svg';
+import heroPicture from '../assets/homepage_main-pic.png';
+import logo from '../assets/LOGO_big.svg';
 
 export const HomePage = () => {
-  const count = useSelector((state: RootState) => state.counter.value);
-  const dispatch = useDispatch();
   const { t } = useTranslation();
 
   return (
     <>
-      <div className="flex justify-center">
-        <img src={viteLogo} className="logo" alt="Vite logo" />
-        <img src={reactLogo} className="logo react" alt="React logo" />
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => dispatch(decrement())}>-</button>
-        <span>{count}</span>
-        <button onClick={() => dispatch(increment())}>+</button>
-      </div>
-
-      <div>
-        <h2>{t('welcome')}</h2>
-      </div>
+      <main className="mx-auto rounded-2xl bg-white flex justify-between overflow-hidden drop-shadow-xl ">
+        <div className="m-auto h-[305px] w-[336px] py-10 px-5 flex flex-col justify-between items-center">
+          <img className="mx-auto" src={logo} alt="logo" />
+          <p>
+            Lorem ipsum dolor sit amet pretium consectetur adipiscing elit.
+            Lorem consectetur adipiscing elit.{' '}
+          </p>
+          <NavButton buttonText={t('welcome')} link="/auth" />
+        </div>
+        <div className="m-auto min-h-[305px] w-[456px]">
+          <img src={heroPicture} alt="main picture" />
+        </div>
+      </main>
     </>
   );
 };
